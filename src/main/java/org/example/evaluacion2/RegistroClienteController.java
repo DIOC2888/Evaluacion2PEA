@@ -2,6 +2,7 @@ package org.example.evaluacion2;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 
 public class RegistroClienteController {
@@ -18,7 +19,7 @@ public class RegistroClienteController {
     @FXML
     private CheckBox chbkGrooming;
     @FXML
-    private CheckBox chbkEsterilizacion;
+    private CheckBox chkbEsterilizacion;
     @FXML
     private CheckBox chbkVacunas;
     @FXML
@@ -31,9 +32,27 @@ public class RegistroClienteController {
     private Button btnGuardar;
     @FXML
     private Button btnLimpiar;
-    @FMX
+    @FXML
+    private Button btnCancelar;
+    @FXML
+    private Button btnSelectFoto;
 
-    private intialize(){
+    private ToggleGroup tgTipoCliente;
+
+    private void intialize(){
+        cmbTipoCliente.getItems().addAll(
+                "Canino",
+                "Felino",
+                "Equino",
+                "Reptil",
+                "Aviar"
+        );
+
+
+        tgTipoCliente = new ToggleGroup();
+
+        rbtnConsulta.setToggleGroup(tgTipoCliente);
+        rbtnHospitalizacion.setToggleGroup(tgTipoCliente);
 
 
     }
