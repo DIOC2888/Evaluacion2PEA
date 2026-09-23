@@ -8,11 +8,18 @@ public class Clientes {
     private String Ciudad;
     private LocalDate Fecha;
     private String TipoSolicitud;
+    private String FotoRuta;
+
+
 
     public Clientes(){
 
     }
 
+
+    public String getFotoRuta() {return FotoRuta;}
+
+    public void setFotoRuta(String fotoRuta) {FotoRuta = fotoRuta;}
     public String getNombre() {
         return Nombre;
     }
@@ -53,11 +60,12 @@ public class Clientes {
         TipoSolicitud = tipoSolicitud;
     }
 
-    public Clientes(String nombre, String tipoCliente, String ciudad, LocalDate fecha, String tipoSolicitud) {
+    public Clientes(String nombre, String tipoCliente, String ciudad, LocalDate fecha, String tipoSolicitud, String fotoRuta) {
         Nombre = nombre;
         TipoCliente = tipoCliente;
         Ciudad = ciudad;
         Fecha = fecha;
         TipoSolicitud = tipoSolicitud;
+        FotoRuta = fotoRuta;
     }
 }

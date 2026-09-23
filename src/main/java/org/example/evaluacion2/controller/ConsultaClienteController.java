@@ -32,12 +32,17 @@ public class ConsultaClienteController {
     private TableColumn<Clientes, String> colTipoSolicitud;
 
 
-    private final ObservableList<Clientes> clientes =
-            FXCollections.observableArrayList();
+    private final ObservableList<Clientes> clientes = FXCollections.observableArrayList();
 
-    private final ClientesRepository clientesRepository =
-            new ClientesRepository();
+    private final ClientesRepository clientesRepository = new ClientesRepository();
 
+    public void recibirCliente(Clientes cliente) {
+        if (cliente == null) {
+            return;
+        }
+
+        clientes.add(cliente);
+    }
 
     @FXML
     private void initialize() {
@@ -45,11 +50,11 @@ public class ConsultaClienteController {
         loadInitialData();
     }
 
-
     private void loadInitialData() {
         clientes.clear();
         clientes.setAll(clientesRepository.findAll());
     }
+
 
 
     private void configureTable() {
