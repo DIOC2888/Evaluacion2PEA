@@ -1,4 +1,5 @@
+
 Integrantes:
-Avril Quezada
-Joshua Donaire
-Denis Ortega
+Avril Denisse Quezada Moncada
+Joshua Isaiah Donaire Zamora
+Denis Iván Ortega Castellón
