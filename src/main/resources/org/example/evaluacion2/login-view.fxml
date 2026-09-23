@@ -20,6 +20,6 @@
       <PasswordField fx:id="pwdPassword" layoutX="181.0" layoutY="139.0" />
       <TextField fx:id="txtUsuarip" layoutX="182.0" layoutY="78.0" />
       <Button fx:id="btnIngresar" layoutX="182.0" layoutY="227.0" mnemonicParsing="false" onAction="#ingresarVentanaPrincipal" text="Ingresar" />
-      <Button fx:id="btnLogin" layoutX="288.0" layoutY="227.0" mnemonicParsing="false" onAction="#cerrarLogin" text="Cerrar" />
+      <Button fx:id="btnCerrar" layoutX="288.0" layoutY="227.0" mnemonicParsing="false" onAction="#cerrarLogin" text="Cerrar" />
    </children>
 </AnchorPane>
