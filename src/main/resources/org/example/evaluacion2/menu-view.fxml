@@ -8,19 +8,18 @@
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuViewController">
    <children>
       <MenuBar prefHeight="28.0" prefWidth="600.0">
         <menus>
           <Menu fx:id="mnuRegistro" mnemonicParsing="false" text="Registro">
             <items>
-              <MenuItem fx:id="miRegistroCliente" mnemonicParsing="false" onAction="#registroCliente" text="Registro de Cliente" />
+              <MenuItem fx:id="miRegistroCliente" mnemonicParsing="false" onAction="#abrirRegistroCliente" text="Registro de Cliente" />
             </items>
           </Menu>
           <Menu fx:id="mnuConsulta" mnemonicParsing="false" text="Consulta">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#consultaCliente" text="Delete" />
+              <MenuItem mnemonicParsing="false" onAction="#crearConsultaCliente" text="Delete" />
             </items>
           </Menu>
         </menus>
