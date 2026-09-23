@@ -35,14 +35,6 @@ TableColumn<Clientes, String> colTipoSolicitud;
 
     }
 
-    private void configureTableSelection(){
-        tblClientes.getSelectionModel().selectedItemProperty()
-                .addListener((observable,oldValue,newValue)->{
-                    if(newValue!=null) {
-                        loadPeliculaIntoForm(newValue);
-                    }
-                });
-    }
 
     private void loadInitialData(){
         clientes.clear();
@@ -58,11 +50,4 @@ TableColumn<Clientes, String> colTipoSolicitud;
         tblClientes.setItems(clientes);
     }
 
-    private void loadClienteIntoForm(Clientes cliente){
-        txtNombres.setText(pelicula.getTitulo());
-        txtDirector.setText(pelicula.getDirector());
-        txtGenero.setText(pelicula.getGenero());
-        txtRecaudacion.setText(String.valueOf(pelicula.getRecaudaciones()));
-        txtCostos.setText(String.valueOf(pelicula.getCostos()));
-    }
 }
