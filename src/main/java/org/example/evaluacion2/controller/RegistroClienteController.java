@@ -1,5 +1,6 @@
 package org.example.evaluacion2.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
@@ -37,8 +38,9 @@ public class RegistroClienteController {
     private Button btnSelectFoto;
 
     private ToggleGroup tgTipoCliente;
+    @FXML
+    private void initialize() {
 
-    private void intialize(){
         cmbTipoCliente.getItems().addAll(
                 "Canino",
                 "Felino",
@@ -47,14 +49,29 @@ public class RegistroClienteController {
                 "Aviar"
         );
 
+        cmbCiudad.getItems().addAll(
+                "Managua",
+                "Masaya",
+                "Granada",
+                "León"
+        );
 
         tgTipoCliente = new ToggleGroup();
 
         rbtnConsulta.setToggleGroup(tgTipoCliente);
         rbtnHospitalizacion.setToggleGroup(tgTipoCliente);
-
-
     }
 
 
+    public void clickGuardar(ActionEvent actionEvent) {
+    }
+
+    public void clickLimpiar(ActionEvent actionEvent) {
+    }
+
+    public void clickCancelar(ActionEvent actionEvent) {
+    }
+
+    public void clickSelectFoto(ActionEvent actionEvent) {
+    }
 }
