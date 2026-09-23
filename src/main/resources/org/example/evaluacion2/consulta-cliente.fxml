@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ConsultaClienteController">
+   <children>
+      <Label layoutX="221.0" layoutY="37.0" text="Consulta de Cliente">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="32.0" layoutY="90.0" prefHeight="200.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="123.20001220703125" text="Nombre Completo " />
+          <TableColumn fx:id="colTipoCliente" prefWidth="101.60003662109375" text="Tipo de Cliente" />
+            <TableColumn fx:id="colCiudad" minWidth="0.0" prefWidth="65.5999755859375" text="Ciudad" />
+            <TableColumn fx:id="colNacimiento" prefWidth="130.4000244140625" text="Fecha de Nacimiento" />
+            <TableColumn fx:id="colTipoSolicitud" prefWidth="103.20001220703125" text="Tipo de Solicitud" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
